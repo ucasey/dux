@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "sourceMap": true,
+    "declarationMap": true,
+    "inlineSources": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "es2017",
+    "lib": ["es2017"],
+    "skipLibCheck": true,
+    "outDir": "lib",
+    "baseUrl": ".",
+    "rootDirs": ["src/"],
+    "types": ["node"],
+    "paths": {
+      "@src/*": ["src/*"],
+      "@core/*": ["src/core/*"],
+      "@plugin/*": ["src/plugin/*"],
+      "@utils/*": ["src/utils/*"],
+      "@adapter/*": ["src/adapter/*"]
+    },
+    "plugins": [{ "transform": "typescript-transform-paths" }, { "transform": "typescript-transform-paths", "afterDeclarations": true }]
+  },
+  "include": ["src/**/*.ts", "typings/**/*"],
+  "exclude": ["node_modules", "lib"]
+}

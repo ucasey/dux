@@ -1,0 +1,25 @@
+{
+  "name": "@ucasey/dux-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ttsc --watch",
+    "dev": "ttsc --watch",
+    "clean": "rm -rf lib",
+    "build": "rushx clean && ttsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@ucasey/dux-sdk": "workspace:*",
+    "commander": "~12.1.0"
+  },
+  "devDependencies": {
+    "typescript": "~5.5.4",
+    "debug": "~4.3.6",
+    "@types/debug": "~4.1.12",
+    "@types/node": "~22.2.0"
+  }
+}
