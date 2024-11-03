@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "outDir": "lib/esm",
+    "declaration": true,
+    "declarationDir": "lib/esm/types",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "rootDirs": ["src/"],
+    "types": ["node"],
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@src/*": ["src/*"],
+      "@toolkit/*": ["src/toolkit/*"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "lib"]
+}
